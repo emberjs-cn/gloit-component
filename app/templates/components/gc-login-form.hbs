@@ -1,0 +1,32 @@
+<section class="main">
+  <form class="login" {{action 'login' on="submit"}}>
+    <h1>
+      <p class="version">{{version}}</p>
+      <p class="title">{{titleHtmlSafe}}</p>
+    </h1>
+    <p class="float">
+      <label for="identification"><i class="fa fa-user"></i>用户名/邮箱：</label>
+      {{input id='identification' type='text' value=identification placeholder='请输入您的用户名/邮箱...' }}
+    </p>
+    <p class="float">
+      <label for="password"><i class="fa fa-key"></i>密码：</label>
+      {{input id='password' type='password' value=password placeholder='请输入您的密码...' class="showpassword" }}
+    </p>
+    <div class="buttons">
+      <div class="ui orange button" {{action 'login'}}>登录</div>
+    </div>
+    <p class="copyright">{{copyrightHtmlSafe}}</p>
+  </form>
+</section>
+<div class="browsers">
+  <ul>
+    {{#each browser in supportedBrowers}}
+    <li>
+      <a target="_blank" {{bind-attr href=browser.url}}>
+        <img {{bind-attr src=browser.icon}}/>
+        <div>{{browser.name}}</div>
+      </a>
+    </li>
+    {{/each}}
+  </ul>
+</div>

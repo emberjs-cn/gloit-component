@@ -1,25 +1,25 @@
-# Gloit-component
+# gloit-component
 
-This README outlines the details of collaborating on this Ember addon.
+采用Ember CLI Addon架构，提供一套Ember UI控件。
 
-## Installation
+## 安装
 
-* `git clone` this repository
+* `git clone https://github.com/emberjs-cn/gloit-component.git`
 * `npm install`
 * `bower install`
 
-## Running
+## 运行
 
 * `ember server`
-* Visit your app at http://localhost:4200.
+* 访问地址：http://localhost:4200，打开应用。
 
-## Running Tests
+## 运行测试
 
 * `ember test`
 * `ember test --server`
 
-## Building
+## 构建
 
 * `ember build`
 
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+更多关于使用`ember-cli`的说明，请参看[http://www.ember-cli.com/](http://www.ember-cli.com/)。
