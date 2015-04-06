@@ -51,6 +51,7 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     ENV.baseURL = '/gloit-component';
+    ENV.locationType = 'hash';
   }
 
   return ENV;
